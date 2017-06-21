@@ -1,0 +1,7 @@
+127.0.0.1 - - [20/Jun/2017:18:13:02 +0530] "GET /UserServiceAppMVC/jsp/userform.jsp HTTP/1.1" 200 590 http-bio-8080-exec-1 837
+127.0.0.1 - - [20/Jun/2017:18:13:02 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+127.0.0.1 - - [20/Jun/2017:18:13:13 +0530] "POST /UserServiceAppMVC/newuser HTTP/1.1" 200 986 http-bio-8080-exec-4 299
+127.0.0.1 - - [20/Jun/2017:18:16:51 +0530] "POST /UserServiceAppMVC/jasonview/12 HTTP/1.1" 200 57 http-bio-8080-exec-6 144
+127.0.0.1 - - [20/Jun/2017:18:17:56 +0530] "POST /UserServiceAppMVC/deleteuser/12 HTTP/1.1" 200 455 http-bio-8080-exec-1 11
+127.0.0.1 - - [20/Jun/2017:18:18:00 +0530] "POST /UserServiceAppMVC/adduser HTTP/1.1" 200 590 http-bio-8080-exec-3 13
+127.0.0.1 - - [20/Jun/2017:18:18:10 +0530] "POST /UserServiceAppMVC/newuser HTTP/1.1" 200 986 http-bio-8080-exec-2 21

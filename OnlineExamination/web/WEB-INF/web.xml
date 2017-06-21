@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config><session-timeout>60</session-timeout></session-config>
+
+    <servlet>
+        <servlet-name>vl</servlet-name>
+        <servlet-class>ValidateLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vl</servlet-name>
+        <url-pattern>/ValidateLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>vr</servlet-name>
+        <servlet-class>ValidateRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vr</servlet-name>
+        <url-pattern>/ValidateRegister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exvl</servlet-name>
+        <servlet-class>ValidateExaminerLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exvl</servlet-name>
+        <url-pattern>/ValidateExaminerLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exvr</servlet-name>
+        <servlet-class>ValidateExaminerReg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exvr</servlet-name>
+        <url-pattern>/ValidateExaminerReg</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ap</servlet-name>
+        <servlet-class>AdminPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ap</servlet-name>
+        <url-pattern>/AdminPage</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>newexam</servlet-name>
+        <servlet-class>CreateNewExam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newexam</servlet-name>
+        <url-pattern>/CreateNewExam</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showexam</servlet-name>
+        <servlet-class>ShowExam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showexam</servlet-name>
+        <url-pattern>/ShowExam</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>shex</servlet-name>
+        <servlet-class>Show_Exam_students</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shex</servlet-name>
+        <url-pattern>/Show_Exam_students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addqn</servlet-name>
+        <servlet-class>Add_question</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addqn</servlet-name>
+        <url-pattern>/Add_question</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exid</servlet-name>
+        <servlet-class>Get_Taken_ExamID</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exid</servlet-name>
+        <url-pattern>/Get_Taken_ExamID</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showqn</servlet-name>
+        <servlet-class>Show_questions</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showqn</servlet-name>
+        <url-pattern>/Show_questions</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>tkexam</servlet-name>
+        <servlet-class>TakeExam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tkexam</servlet-name>
+        <url-pattern>/TakeExam</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>shexqn</servlet-name>
+        <servlet-class>Show_Exam_Ques</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shexqn</servlet-name>
+        <url-pattern>/Show_Exam_Ques</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>he</servlet-name>
+        <servlet-class>HandleExam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>he</servlet-name>
+        <url-pattern>/HandleExam</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>finE</servlet-name>
+        <servlet-class>FinishExam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>finE</servlet-name>
+        <url-pattern>/FinishExam</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>lg</servlet-name>
+        <servlet-class>LogOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lg</servlet-name>
+        <url-pattern>/LogOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delq</servlet-name>
+        <servlet-class>DeleteQues</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delq</servlet-name>
+        <url-pattern>/DeleteQues</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>upq</servlet-name>
+        <servlet-class>UpdateQues</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upq</servlet-name>
+        <url-pattern>/UpdateQues</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>upqf</servlet-name>
+        <servlet-class>UpdateQuesFeed</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upqf</servlet-name>
+        <url-pattern>/UpdateQuesFeed</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

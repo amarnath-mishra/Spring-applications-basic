@@ -1,0 +1,123 @@
+
+.hoverplace{
+    position: relative;
+		position: absolute;
+    bottom: 72px;
+    left: 16px;
+    font-size: 18px;
+    border: 2px  #73AD21;
+		background-color: #1abc9c;
+}
+
+#hero ul {
+	color: black;
+text-align: left;
+}
+
+
+
+
+.dropdown-menu {
+  background-color: transparent;
+  border-color: transparent;
+
+
+    top:80px;
+    position: absolute;
+     display: none;
+     z-index: 1;
+     left: -130px;
+     min-height: 10px;
+     min-width: 10px;
+     width: 300px;
+
+
+}
+.stopheight{
+    max-height: 320px;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+       width: 300px;
+
+}
+
+.stopheight li{
+
+	background-color: blue;
+	border-color: black ;
+	    height: 56px;
+	    margin: 4px;
+			border-image: linear-gradient(to right, white 0%, #cedae0 40%, #cedae0 60%, white 100%) 1 20%;
+}
+
+
+.dropdown-header{
+  background: #3d5c7f;
+  padding: 25px;
+  font color="white"
+  position: relative;
+  text-align: center;
+  color: #747F8B;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  border: 0px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  -moz-border-image: -moz-linear-gradient(right, white, #1abc9c, #1abc9c, white) 1 20%;
+  -o-border-image: -o-linear-gradient(right, white, #1abc9c, #1abc9c, white) 1 20%;
+  border-image: linear-gradient(to right, white 0%, #1abc9c 40%, #1abc9c 60%, white 100%) 1 20%;
+  box-shadow: 0px 2px 10px -2px #1abc9c;
+}
+
+
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+    height:auto;
+    min-height: 700px;
+
+}
+
+.notification-text {
+  display: table-cell;
+  padding-left: 15px;
+  vertical-align: middle;
+  color: #747F8B;
+  cursor: pointer;
+  font-size: 14px;
+  word-spacing: 2px;
+  line-height: 21px;
+}
+
+#hero article {
+	width: 36%;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	top: 32px;
+	right: 33px;
+	background-color: #d2e094;
+	border-radius: 21px;
+	color: black;
+}
+
+.headings{
+
+text-decoration: underline;
+
+background-color: white;
+}
+
+
+.notification-image-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.notification-image {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  border-radius: 100%;
+}

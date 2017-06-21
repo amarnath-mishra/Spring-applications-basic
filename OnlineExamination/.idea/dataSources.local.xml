@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - onlineexam@localhost" uuid="27906b9e-b496-4f49-9794-b77dd83bac07">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>onlineexam.*</schema-pattern>
+      <default-schemas>onlineexam.*</default-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	metadata-complete="true" version="3.1">
+
+
+	<!-- <filter> -->
+	<!-- <filter-name>MyFilter</filter-name> -->
+	<!-- <filter-class>Filter.MyFilter</filter-class> -->
+	<!-- </filter> -->
+	<!-- <filter-mapping> -->
+	<!-- <filter-name>MyFilter</filter-name> -->
+	<!-- <url-pattern>/*</url-pattern> -->
+	<!-- </filter-mapping> -->
+
+	<servlet>
+		<servlet-name>Data_Show</servlet-name>
+		<servlet-class>Servlet.Data_Show</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Data_Show</servlet-name>
+		<url-pattern>/Data_Show</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Processor</servlet-name>
+		<servlet-class>processorpackage.Processor</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MainServlet</display-name>
+		<servlet-name>MainServlet</servlet-name>
+		<servlet-class>Servlet.MainServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Processor</servlet-name>
+		<url-pattern>/Processor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MainServlet</servlet-name>
+		<url-pattern>/MainServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

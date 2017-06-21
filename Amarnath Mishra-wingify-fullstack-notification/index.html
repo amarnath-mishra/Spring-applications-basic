@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+  <script src="/socket.io/socket.io.js"></script>
+  <title>Notifications App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Add bootstrap styles -->
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script> <!-- Add AngularJS API and necessary files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- Added just to support bootstrap once in navigation bar only -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Add bootstrap-->
+  
+  <script src = "MyAppModules.js"></script> <!-- JavaScript file which have my angularjs app modules  -->
+  <script src = "AngularController_ofApp.js"></script> <!-- AngularJS file which is controlling this whole HTML as a brain behind it  -->
+  <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Has all the CSS styling codes -->
+  </head>
+
+
+  <body ng-app = "mainApp"> <!--  Intializing my AngularJS app  -->
+<div ng-controller = "studentController"> <!--  Setting up Controller (It's code are in AngularConrollers.js file) -->
+
+      <nav class="navbar navbar-inverse">
+      <div class="container-fluid" >
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Notifications App</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+          <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#" >
+            <!-- Added bell using Bootstrap Glyphicons -->
+            <span class="glyphicon glyphicon-bell" ng-click="ChangeToRead_SetCountZero(notiArrayLen, notiArray.length)">{{notiArrayLen}}</span></span>
+           </a>
+            <ul class="dropdown-menu" >
+              <li class="dropdown-header" align="center" ><font color="white">Notifications<span class="badge">{{notiArrayLen}}</span></font> <span class="traingle"> </span></li>
+              <div class = "stopheight">
+            <div ng-repeat="x in notiArray" >
+              <div class="notification-image-wrapper">
+                      <li ng-mouseover="mouseOverX(x.data)" ng-style="x.color" >
+                      <div class="notification-image">
+                        <img src="{{x.imgURL}}" alt="" width="32">
+                      </div>
+                      {{x.data}}    <!-- This shows all the notifications stored in notiArray -->
+                     </li>
+            </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center">
+      <div id="hero">
+    <article>
+     <h3 class = "headings"><font color="red"> How this app works ? </font></h3>
+     <br>
+     <ul>
+<li> Back end automatically generates new notifications and pushes it to clients.</li>
+<li> Numbers on bell shows number of new notifications (Unread).</li>
+<br>
+<li><font color="blue"> By Clicking on bell, new notifications are marked as read and its background gets a bit darker as read (As Problem statement deamnded).</font></li>,
+<br>
+<li><font color="blue"> You can clearly see the color differnce when dropdown is open and new notifications come.</font></li>
+<br>
+<li> Hover your mouse over any notification to see it more clearly outside on screen.</li>
+<li> In back end status = 1(unread), and status =0 (read)</li>
+     </ul>
+   </article>
+ </div>
+      <div class = "hoverplace">   <!-- Triggers  whenever clients hovers over any notification -->
+      <p> <b><font color="#26476d">Last noticed Notification : </font>   {{msgg}}</b>   </p>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </body>
+</html>
